@@ -11,6 +11,8 @@ import {
 } from './perf-impl/common.mjs'
 import R from 'ramda'
 
+const arrSize = parseInt(process.env.ARR_SIZE)
+
 const setOperationSuite = new Benchmark.Suite('Ramda Operation')
 
 function v1Standard(arr) {
